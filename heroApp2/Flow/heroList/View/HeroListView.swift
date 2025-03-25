@@ -11,10 +11,9 @@ import Kingfisher
 struct HeroListView: View {
     @StateObject private var viewModel: HeroListViewModel
 
-    init(service: HeroService, router: heroRouter) {
-        _viewModel = StateObject(wrappedValue: HeroListViewModel(service: service, router: router))
+    init(viewModel: HeroListViewModel) {
+        _viewModel = StateObject(wrappedValue: viewModel)
     }
-
     var body: some View {
         NavigationView {
             ScrollView {

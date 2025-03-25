@@ -23,18 +23,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let router = heroRouter()
         let heroService = HeroServiceImpl()
         let viewModel = HeroListViewModel(service: heroService, router: router)
-        
-        let listViewController = UIHostingController(
-            rootView: HeroListView(
-                viewModel: viewModel
-            )
-        )
-        let rootViewController = UINavigationController(
-            rootViewController: listViewController
-        )
-        
+                
+        let listViewController = UIHostingController(rootView: HeroListView(viewModel: viewModel))
+        let rootViewController = UINavigationController(rootViewController: listViewController)
+                
         router.rootViewController = rootViewController
-        
+            
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
     }
