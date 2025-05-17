@@ -74,7 +74,6 @@
 				19F6B2BA2D93238D0065EAEB /* Service */,
 				19F6B2B72D9322AB0065EAEB /* Entity */,
 				19F6B2B42D9322190065EAEB /* Router */,
-				19F6B2B32D93220A0065EAEB /* Resources */,
 				19F6B29F2D9321CD0065EAEB /* AppDelegate.swift */,
 				19F6B2A12D9321CD0065EAEB /* SceneDelegate.swift */,
 				19F6B2A82D9321CF0065EAEB /* Assets.xcassets */,
@@ -82,13 +81,6 @@
 				19F6B2AD2D9321CF0065EAEB /* Info.plist */,
 			);
 			path = heroApp2;
-			sourceTree = "<group>";
-		};
-		19F6B2B32D93220A0065EAEB /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		19F6B2B42D9322190065EAEB /* Router */ = {
